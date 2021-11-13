@@ -8,6 +8,8 @@ router.get('/', (req, res, next) => {
 // You put the next routes here 👇
 // example: router.use("/auth", authRoutes)
 
+// test
+
 router.post('/upload', imageUploader.single('imageUrl'), (req, res, next) => {
   if (!req.file) {
     next(new Error('No file upload!'));
